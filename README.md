@@ -1,6 +1,6 @@
 # gulp-multi-extend
 
-A [gulp](https://github.com/wearefractal/gulp) plugin to extend JSON contents with a JSON file. Uses [node.extend](https://npmjs.org/package/node.extend) plugin for extend.
+A [gulp](https://github.com/wearefractal/gulp) plugin to extend JSON contents with a separate JSON file. Uses [node.extend](https://npmjs.org/package/node.extend) plugin for extend.
 
 ## Usage
 
