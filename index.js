@@ -8,17 +8,17 @@ var PluginError = gutil.PluginError;
 
 var PLUGIN_NAME = 'gulp-multi-extend';
 
-module.exports = function (fileName, processFn, jsonSpace) {
+module.exports = function (filePath, processFn, jsonSpace) {
   var extendContents;
 
-  if (!fileName) {
-    throw new PluginError(PLUGIN_NAME, PLUGIN_NAME + ': Missing fileName parameter');
+  if (!filePath) {
+    throw new PluginError(PLUGIN_NAME, PLUGIN_NAME + ': Missing filePath parameter');
   }
 
   try {
-    extendContents = JSON.parse(fs.readFileSync(fileName, { encoding: 'utf8' }));
+    extendContents = JSON.parse(fs.readFileSync(filePath, { encoding: 'utf8' }));
   } catch (err) {
-    throw new PluginError(PLUGIN_NAME, PLUGIN_NAME + ': File "' + fileName + '" has errors (' + err + ')');
+    throw new PluginError(PLUGIN_NAME, PLUGIN_NAME + ': File "' + filePath + '" has errors (' + err + ')');
   }
 
   return through.obj(function (file, enc, callback) {

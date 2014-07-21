@@ -71,7 +71,7 @@ describe('gulp-multi-extend', function () {
   });
 
   it('should error without fileName', function () {
-    extend.should.throw('gulp-multi-extend: Missing fileName parameter');
+    extend.should.throw('gulp-multi-extend: Missing filePath parameter');
   });
 
   /* jshint -W068 */
