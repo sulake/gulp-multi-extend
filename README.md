@@ -38,6 +38,7 @@ The JSON file to extend other files with
 
 #### processFn
 Type: `Function(srcFilePath, contents)`
+
 Default: `undefined`
 
 Params:
@@ -46,6 +47,7 @@ Params:
 
 #### jsonSpace
 Type: `String` or `Number`
+
 Default: `undefined`
 
 Number of spaces used for pretty printing JSON.
