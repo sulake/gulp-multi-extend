@@ -1,0 +1,37 @@
+{
+  "name": "gulp-multi-extend",
+  "version": "0.0.1",
+  "description": "A gulp plugin to extend multiple JSON files",
+  "license": "MIT",
+  "keywords": [
+    "gulpplugin",
+    "gulp",
+    "json",
+    "extend",
+    "merge"
+  ],
+  "homepage": "https://github.com/sulake/gulp-multi-extend",
+  "bugs": "https://github.com/sulake/gulp-multi-extend/issues",
+  "author": {
+    "name": "Tuomo Jokimies",
+    "email": "tuomo.jokimies@sulake.com",
+    "url": "https://github.com/tjokimie"
+  },
+  "main": "./index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sulake/gulp-multi-extend"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "gulp-util": "^3.0.0",
+    "node.extend": "^1.0.10",
+    "through2": "^0.5.1"
+  },
+  "devDependencies": {
+    "mocha": "^1.20.1",
+    "should": "^4.0.4"
+  }
+}
