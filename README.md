@@ -17,8 +17,8 @@ gulp.src('./files/to/extend/*.json')
   .pipe(gulp.dest('./dist'));
   
 // Process with.json file with processJSON function
-function processJSON(filePath, contents) {
-  var basename = path.basename(filePath, path.extname(filePath));
+function processJSON(srcFilePath, contents) {
+  var basename = path.basename(srcFilePath, path.extname(srcFilePath));
   // e.g. /path/to/files/to/extend/en.json -> en
   return contents[basename];
 }
