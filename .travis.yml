@@ -5,6 +5,7 @@ node_js:
   - "0.10"
   - "stable"
   - "iojs"
+install: npm install
 notifications:
   email:
     on_failure: change
