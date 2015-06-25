@@ -86,7 +86,7 @@ describe('gulp-multi-extend', function () {
     var stream = extend('test/fixtures/base.json', 'notFunction');
 
     stream.on('error', function (error) {
-      error.message.should.equal('gulp-multi-extend: TypeError: string is not a function');
+      error.message.should.match(/^gulp-multi-extend: TypeError: (string|processFn) is not a function$/);
       done();
     });
 
