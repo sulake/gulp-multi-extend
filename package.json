@@ -26,12 +26,12 @@
     "test": "mocha"
   },
   "dependencies": {
-    "gulp-util": "^3.0.0",
-    "node.extend": "^1.0.10",
-    "through2": "^0.5.1"
+    "gulp-util": "^3.0.6",
+    "node.extend": "^1.1.5",
+    "through2": "^2.0.0"
   },
   "devDependencies": {
-    "mocha": "^1.20.1",
-    "should": "^4.0.4"
+    "mocha": "^2.2.5",
+    "should": "^7.0.1"
   }
 }
