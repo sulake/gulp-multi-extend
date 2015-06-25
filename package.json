@@ -18,6 +18,11 @@
     "url": "https://github.com/tjokimie"
   },
   "main": "./index.js",
+  "files": [
+    "index.js",
+    "LICENSE",
+    "README.md"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/sulake/gulp-multi-extend"
